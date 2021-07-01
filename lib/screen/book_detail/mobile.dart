@@ -1,7 +1,7 @@
-import 'package:book_store/screen/book_detail/favorite.dart';
-import 'package:book_store/util/colors.dart';
+import 'package:joy_read/screen/book_detail/favorite.dart';
+import 'package:joy_read/util/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:book_store/model/book.dart';
+import 'package:joy_read/model/book.dart';
 
 class MobileSection extends StatelessWidget {
   final MBook book;

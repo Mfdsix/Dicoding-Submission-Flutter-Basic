@@ -1,4 +1,4 @@
-import 'package:book_store/model/book.dart';
+import 'package:joy_read/model/book.dart';
 
 // special credits for bvaughn, this list datas copied from https://github.com/bvaughn/infinite-list-reflow-examples/blob/master/books.json
 

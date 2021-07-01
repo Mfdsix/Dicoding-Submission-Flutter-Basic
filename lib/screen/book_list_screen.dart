@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:book_store/screen/book_list/header.dart';
-import 'package:book_store/screen/book_list/recommendation.dart';
+import 'package:joy_read/screen/book_list/header.dart';
+import 'package:joy_read/screen/book_list/recommendation.dart';
 
 class BookListScreen extends StatelessWidget {
   @override

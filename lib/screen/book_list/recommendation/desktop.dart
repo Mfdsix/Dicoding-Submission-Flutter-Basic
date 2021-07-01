@@ -1,7 +1,7 @@
-import 'package:book_store/data/book.dart';
-import 'package:book_store/model/book.dart';
-import 'package:book_store/screen/book_detail_screen.dart';
-import 'package:book_store/util/colors.dart';
+import 'package:joy_read/data/book.dart';
+import 'package:joy_read/model/book.dart';
+import 'package:joy_read/screen/book_detail_screen.dart';
+import 'package:joy_read/util/colors.dart';
 import 'package:flutter/material.dart';
 
 class DesktopSection extends StatelessWidget {

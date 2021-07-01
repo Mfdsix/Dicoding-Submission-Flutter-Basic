@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:book_store/util/colors.dart';
-import 'package:book_store/util/strings.dart';
+import 'package:joy_read/util/colors.dart';
+import 'package:joy_read/util/strings.dart';
 
 class HeaderSection extends StatelessWidget {
   final double paddingHorizontal;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:book_store/model/book.dart';
-import 'package:book_store/screen/book_detail/mobile.dart';
-import 'package:book_store/screen/book_detail/desktop.dart';
+import 'package:joy_read/model/book.dart';
+import 'package:joy_read/screen/book_detail/mobile.dart';
+import 'package:joy_read/screen/book_detail/desktop.dart';
 
 class BookDetailScreen extends StatelessWidget {
   final MBook book;

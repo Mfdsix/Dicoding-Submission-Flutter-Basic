@@ -1,8 +1,8 @@
-import 'package:book_store/screen/book_list/recommendation/desktop.dart';
-import 'package:book_store/screen/book_list/recommendation/mobile.dart';
+import 'package:joy_read/screen/book_list/recommendation/desktop.dart';
+import 'package:joy_read/screen/book_list/recommendation/mobile.dart';
 import 'package:flutter/material.dart';
-import 'package:book_store/util/strings.dart';
-import 'package:book_store/util/colors.dart';
+import 'package:joy_read/util/strings.dart';
+import 'package:joy_read/util/colors.dart';
 
 class RecommendationSection extends StatelessWidget {
   @override

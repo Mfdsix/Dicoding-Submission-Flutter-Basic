@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:book_store/screen/book_list_screen.dart';
+import 'package:joy_read/screen/book_list_screen.dart';
 
 void main() {
   runApp(MyApp());
