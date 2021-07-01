@@ -10,7 +10,16 @@ class BookListScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            HeaderSection(),
+            LayoutBuilder(
+                builder: (BuildContext context, BoxConstraints constraints) {
+              if (constraints.maxWidth < 800) {
+                return HeaderSection(
+                    paddingHorizontal: 30, paddingVertical: 30);
+              } else {
+                return HeaderSection(
+                    paddingHorizontal: 150, paddingVertical: 80);
+              }
+            }),
             RecommendationSection(),
           ],
         ),

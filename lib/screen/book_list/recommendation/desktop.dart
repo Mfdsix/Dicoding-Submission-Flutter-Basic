@@ -1,5 +1,6 @@
 import 'package:book_store/data/book.dart';
 import 'package:book_store/model/book.dart';
+import 'package:book_store/screen/book_detail_screen.dart';
 import 'package:book_store/util/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +29,16 @@ class RecommendationItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
       child: Column(
         children: [
           Container(
@@ -60,13 +71,18 @@ class RecommendationItem extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (BuildContext context) {
+                return BookDetailScreen(book: item);
+              }));
+            },
             child: IntrinsicHeight(
               child: Row(children: [
                 Expanded(
                   flex: 4,
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                     color: secondaryColor,
                     child: Center(
                         child: Text("See Detail",

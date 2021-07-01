@@ -1,5 +1,6 @@
 import 'package:book_store/data/book.dart';
 import 'package:book_store/model/book.dart';
+import 'package:book_store/screen/book_detail_screen.dart';
 import 'package:book_store/util/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -67,7 +68,12 @@ class RecommendationItem extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return BookDetailScreen(book: item);
+                    }));
+                  },
                   child: IntrinsicHeight(
                     child: Row(children: [
                       Expanded(

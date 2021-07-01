@@ -3,11 +3,17 @@ import 'package:book_store/util/colors.dart';
 import 'package:book_store/util/strings.dart';
 
 class HeaderSection extends StatelessWidget {
+  final double paddingHorizontal;
+  final double paddingVertical;
+  HeaderSection(
+      {required this.paddingHorizontal, required this.paddingVertical});
+
   @override
   Widget build(BuildContext context) {
     return Container(
       color: mainColor,
-      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+      padding: EdgeInsets.symmetric(
+          horizontal: paddingHorizontal, vertical: paddingVertical),
       child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -21,7 +27,13 @@ class HeaderSection extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.notifications),
               color: mainText,
-              onPressed: () {},
+              onPressed: () {
+                final snackBar = SnackBar(
+                  content: Text("You doesn't Have Any Notification"),
+                  duration: Duration(seconds: 1),
+                );
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              },
             ),
           ],
         ),
