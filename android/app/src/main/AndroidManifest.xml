@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.book_store">
+    package="com.zgenit.joyread">
    <application
-        android:label="book_store"
+        android:label="JoyRead"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
