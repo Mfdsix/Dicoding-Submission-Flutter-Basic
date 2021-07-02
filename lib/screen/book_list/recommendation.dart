@@ -11,7 +11,7 @@ class RecommendationSection extends StatelessWidget {
       padding: const EdgeInsets.only(top: 30, left: 30),
       child: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constaints) {
-        if (constaints.maxWidth < 800) {
+        if (constaints.maxWidth < 1200) {
           return Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
